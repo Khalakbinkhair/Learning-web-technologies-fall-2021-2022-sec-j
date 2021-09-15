@@ -6,9 +6,7 @@
         <STOCK>50</STOCK>
         <STATUS>1</STATUS>
     </Product>
-</Products>
 
-<Products>
     <Product>
         <ID>20</ID>
         <NAME>HTC</NAME>
@@ -16,9 +14,7 @@
         <STOCK>35</STOCK>
         <STATUS>0</STATUS>
     </Product>
-</Products>
 
-<Products>
     <Product>
         <ID>23</ID>
         <NAME>Nokia</NAME>
