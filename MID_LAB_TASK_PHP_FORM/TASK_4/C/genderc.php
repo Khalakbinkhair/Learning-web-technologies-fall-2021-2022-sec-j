@@ -23,7 +23,7 @@
 <body>	
 	<form method="get" action="#">
 		<fieldset>
-			<legend>Gender</legend>
+			<legend>GENDER</legend>
 			
 					
 						<input type="radio" name="gender" value="<?php 

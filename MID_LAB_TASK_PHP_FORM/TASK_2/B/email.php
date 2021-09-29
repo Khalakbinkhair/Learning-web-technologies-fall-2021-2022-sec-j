@@ -24,7 +24,7 @@
 <body>	
 	<form method="get" action="#">
 		<fieldset>
-			<legend>Email</legend>
+			<legend><b>EMAIL<b/></legend>
 			
 					
 						<input type="email" name="Email" value=""><br/>

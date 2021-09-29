@@ -23,7 +23,7 @@
 <body>	
 	<form method="get" action="gendercheck.php">
 		<fieldset>
-			<legend>Gender</legend>
+			<legend>GENDER</legend>
 			
 					
 						<input type="radio" name="gender" value="">Male

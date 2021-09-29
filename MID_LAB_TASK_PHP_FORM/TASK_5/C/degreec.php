@@ -20,7 +20,7 @@
 <body>	
 	<form method="get" action="#">
 		<fieldset>
-			<legend>degree</legend>
+			<legend>DEGREE</legend>
 			
 					      <input type="checkbox" name="check" value="<?php 
 

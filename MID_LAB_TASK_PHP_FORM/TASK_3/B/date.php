@@ -23,7 +23,7 @@
 <body>	
 	<form method="get" action="datecheck.php">
 		<fieldset>
-			<legend>Date</legend>
+			<legend><b>DATE<b/></legend>
 			
 					
 						<input type="date" name="date" value=""><br/>

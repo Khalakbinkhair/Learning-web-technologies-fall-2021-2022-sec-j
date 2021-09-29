@@ -22,7 +22,7 @@
 <body>	
 	<form method="get" action="bloodcheck.php">
 		<fieldset>
-			<legend><b>Blood Group<b/></legend>
+			<legend><b>BLOOD GROUP<b/></legend>
 			 <select name=" ">
                 <option value="<?php 
 
