@@ -25,17 +25,13 @@
 	<form method="get" action="#">
 		<fieldset>
 			<legend>NAME</legend>
-			<table>
-				<tr>
-					<td>USERNAME</td>
-					<td>
-						<input type="text" name="myname" value="">
-					</td>
-					<td>
-						<input type="submit" name="submit" value="Submit">
-					</td>
-				</tr>
-			</table>
+			
+						<input type="text" name="myname" value=""><br/>
+					
+                                       <br/>
+		<input type="submit" name="submit" value="Submit">
+					
+				
 		</fieldset>
 	</form>
 </body>

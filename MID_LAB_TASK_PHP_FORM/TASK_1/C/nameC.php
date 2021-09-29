@@ -25,10 +25,7 @@
 	<form method="get" action="#">
 		<fieldset>
 			<legend>NAME</legend>
-			<table>
-				<tr>
-					<td>USERNAME</td>
-					<td>
+			
 						<input type="text" name="myname" value="<?php 
 
 	//print_r($_GET);
@@ -44,13 +41,10 @@
 	}
 	
 ?>
-">
-					</td>
-					<td>
+"><br/>
+					
 						<input type="submit" name="submit" value="Submit">
-					</td>
-				</tr>
-			</table>
+					
 		</fieldset>
 	</form>
 </body>
