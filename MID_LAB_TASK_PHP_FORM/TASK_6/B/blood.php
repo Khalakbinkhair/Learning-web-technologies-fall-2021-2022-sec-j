@@ -32,7 +32,7 @@
                 <option value="">O-</option>
                 <option value="">A-</option>
                 <option value="">B-</option>
-               </select> <br> <br> <br/>
+               </select>  <br/>
 					      
 						
 					
