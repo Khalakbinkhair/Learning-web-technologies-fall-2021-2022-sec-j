@@ -4,23 +4,21 @@
     <title>Name Field </title>
 </head>
 <body>  
-    <form method="gets" action="#" >
+    <form method="POST" action="#" >
         <fieldset border-width: 3px>
             <legend>NAME</legend>
             
                         <input type="text" name="myname" value="<?php 
 
-    //print_r($_GET);
     
     if(isset($_REQUEST['submit']))
     {
         $str = $_REQUEST['myname'];
-        if($str >chr(2))
-            echo $str;
-         elseif($str <chr(2) )
-            echo "Requirement Not fill...";
-            else
-            echo "";
+       if (strlen($_POST["myname"])<2)
+            {
+              echo " $str-should be 2 or longer";
+            }
+       
        
     }
     
