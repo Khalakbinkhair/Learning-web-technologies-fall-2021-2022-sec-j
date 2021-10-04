@@ -10,6 +10,7 @@
             
                         <input type="text" name="myname" value="<?php 
 
+    //print_r($_GET);
     
     if(isset($_REQUEST['submit']))
     {
