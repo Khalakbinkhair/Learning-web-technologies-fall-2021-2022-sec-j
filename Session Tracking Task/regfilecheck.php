@@ -1,5 +1,5 @@
 <?php
-     session_start();
+    session_start();
 
 	if(isset($_POST['submit'])){
 
@@ -11,9 +11,14 @@
 						if($_POST['password'] != ""){
 							 if($_POST['checkpassword'] != ""){
 									  	
-                     $user = ['username'=> $_POST['username'], 'password'=> $_POST['password']];
-					$_SESSION['user'] = $user;
-					header('location: Loggedin.html');		
+                  $user = ['username'=> $_POST['username'], 'password'=> $_POST['password']];
+			//	$_COOKIE['user'] = $user;
+                       setcookie('username',$_POST['username'], time()+3600, '/');
+                        setcookie('password',$_POST['password'],time ()+3600, '/');
+                   
+
+
+					header('location: Login.html');		
 		}else{
 			echo "Invald username...";
 		}
