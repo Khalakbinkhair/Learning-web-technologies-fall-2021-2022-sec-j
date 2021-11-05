@@ -1,18 +1,60 @@
-<?php 
-	include('header.php');
+<?php
+	session_start();
+    require_once('../model/usersModel.php');
+
+	if(isset($_POST['submit'])){
+
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+    $email=$_POST['email'];
+
+		if($username != ""){
+			if($password != ""){
+				if($email != ""){
+
+					  $user =[
+                               'username'=> $username,
+                               'password'=>$password,
+                               'email'=>$email,
+                               'type'=>'user'
+                              ];
+
+                        $status= addUser($user);
+
+                      if($status)
+                      {
+                          header('location:userlist.php');
+                      }
+                      else
+                      {
+                          echo"Try Again........";
+                      }
+				}else{
+					echo "Invalid email...";
+				}	
+			}else{
+				echo "Invalid password...";
+			}
+		}else{
+			echo "Invalid username...";
+		}
+	}
 ?>
+
+
+
 
 <html>
 <head>
 	<title>Create New User</title>
 </head>
+
 <body>
 	<center>	
 		<a href="home.php">Back </a> |
-		<a href="../controller/logout.php"> logout</a>
+		<a href="logout.php">Logout </a> 
 	</center>
-
-	<form method="post" action="signupcheck.php">
+	<form method="post">
 		<fieldset>
 			<legend>Create New</legend>
 			<table>

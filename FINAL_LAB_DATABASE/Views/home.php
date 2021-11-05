@@ -1,22 +1,14 @@
-<?php 
-	//include('header.php');
-	//include_once('header.php');
-
-	//require('header.php');
-	require_once('header.php')
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
 	<title>Home Page</title>
 </head>
 <body>
-	<h1>Welcome Home!</h1>
-	<a href="create.php"> Create New User</a> |
-	<a href="userlist.php"> User List</a> |
-	<a href="../controller/logout.php"> logout</a>
+	<center>
+	<u><h1>Welcome to Home!</h1></u>
+	<h3><a href="create.php"> Create New User</a></h3> 
+	<h3><a href="userlist.php"> User List</a> </h3><br/>
+	<a href="logout.php"> Logout</a>
+	</center>
 </body>
 </html>

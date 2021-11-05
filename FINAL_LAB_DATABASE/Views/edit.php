@@ -1,20 +1,67 @@
-<?php 
-	include('header.php');
+<?php
+	session_start();
+    require_once('../model/usersModel.php');
+
+    $id=$_GET['edit'];
+
+	if(isset($_POST['submit'])){
+
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+    $email=$_POST['email'];
+    $type='user';
+    
+		if($username != ""){
+			if($password != ""){
+				if($email != ""){
+
+                    
+                    $user =[
+                        'username'=> $username,
+                        'password'=>$password,
+                        'email'=>$email,
+                        'type'=>'user',
+                        'id'=>$id
+                       ]; 
+                       $result=editUser($user);
+
+                      if($result)
+                      {
+                        header('location:userlist.php');
+                      }
+                      else
+                      {
+                          die(mysqli_error($con));
+                          //echo"Try Again........";
+                      }
+				}else{
+					echo "Invalid email...";
+				}	
+			}else{
+				echo "Invalid password...";
+			}
+		}else{
+			echo "Invalid username...";
+		}
+	}
 ?>
+
+
+
 
 <html>
 <head>
-	<title>Edit New User</title>
+	<title>Create New User</title>
 </head>
+
 <body>
 	<center>	
-		<a href="home.php">Back </a> |
-		<a href="../controller/logout.php"> logout</a>
+		<a href="userlist.php">Back </a> |
+		<a href="logout.php">Logout </a> 
 	</center>
-
-	<form method="post" action="signupcheck.php">
+	<form method="post">
 		<fieldset>
-			<legend>Edit </legend>
+			<legend>Create New</legend>
 			<table>
 				<tr>
 					<td>Username:</td>
@@ -30,7 +77,7 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><input type="submit" name="submit" value="Create"></td>
+					<td><input type="submit" name="submit" value="Edit"></td>
 				</tr>
 			</table>
 		</fieldset>
