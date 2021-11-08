@@ -5,8 +5,8 @@
 	if(isset($_POST['submit'])){
 
     $name=$_POST['name'];
-    $buying=$_POST['buying'];
-    $selling=$_POST['selling'];
+    $buying=$_POST['buy'];
+    $selling=$_POST['sell'];
 
 		if($name != ""){
 			if($buying != ""){
@@ -14,8 +14,8 @@
 
 					  $product =[
                                'username'=> $name,
-                               'buying'=>$buying,
-                               'selling'=>$selling
+                               'buy'=>$buying,
+                               'sell'=>$selling
                               ];
 
                         $status= addProducts($product);
