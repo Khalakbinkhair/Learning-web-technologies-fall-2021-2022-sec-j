@@ -13,7 +13,7 @@
 				if($selling != ""){
 
 					  $product =[
-                               'name'=> $name,
+                               'username'=> $name,
                                'buying'=>$buying,
                                'selling'=>$selling
                               ];

@@ -1,7 +1,7 @@
 <?php
 
     $host="localhost";
-    $dbname="product_db";
+    $dbname="Webtech";
     $dbuser="root";
     $dbpassword="";
     
