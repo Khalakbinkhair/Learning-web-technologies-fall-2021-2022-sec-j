@@ -1,29 +1,41 @@
 <?php
 	session_start();
-    require_once('../model/usermodel.php');
+    require_once('usersModel.php');
 
 	if(isset($_POST['submit'])){
 
     $name=$_POST['name'];
-    $buying=$_POST['buy'];
-    $selling=$_POST['sell'];
+    $buying=$_POST['buying'];
+    $selling=$_POST['selling'];
 
 		if($name != ""){
 			if($buying != ""){
 				if($selling != ""){
 
 					  $product =[
-                               'username'=> $name,
-                               'buy'=>$buying,
-                               'sell'=>$selling
+                               'name'=> $name,
+                               'buying'=>$buying,
+                               'selling'=>$selling
                               ];
 
                         $status= addProducts($product);
 
                       if($status)
                       {
-                        echo"DONE........";
-                         // header('location:addProduct.php');
+                        
+                         if(isset($_POST['dis']))
+                         {
+                             echo "NAME :" .$name ."<br/>";
+                             echo  "Buying Price:" .$buying."<br/>";
+                             echo  "Selling :" .$selling."<br/>";
+                             
+
+                         }
+                         else
+                         {
+
+                         }
+
                       }
                       else
                       {
@@ -41,17 +53,20 @@
 	}
 ?>
 
+
+
+
 <html>
 <body>
 <fieldset >
 	<legend>Add product</legend>
 
   Name:</br><input type="text" name="username"></br>
-  Buying Price</br><input type="text" name="buy"></br>
-  Selling Price</br><input type="text" name="sell"></br>
+  Buying Price</br><input type="text" name="buying"></br>
+  Selling Price</br><input type="text" name="selling"></br>
   _________________________________________ <br/>
    
-    <br/>  <input type="checkbox" name="" value="">Display</br>
+    <br/>  <input type="checkbox" name="dis" value="">Display</br>
 
   __________________________________________
 

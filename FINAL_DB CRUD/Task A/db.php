@@ -1,18 +1,18 @@
 <?php
 
     $host="localhost";
-    $dbname="Webtech";
+    $dbname="webtech";
     $dbuser="root";
     $dbpassword="";
     
     function getConnection()
     {
         global $host;
-        global $dbname;
         global $dbuser;
+        global $dbname;
         global $dbpassword;
 
-        $con=mysqli_connect($host,$dbuser,$dbpassword,$dbname); 
+        $con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 
         return $con;
     }
