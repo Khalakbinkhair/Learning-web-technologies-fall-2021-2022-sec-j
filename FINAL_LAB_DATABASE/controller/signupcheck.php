@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
                                'username'=> $username,
                                'password'=>$password,
                                'email'=>$email,
-                               'type'=>'user'
+                              
                               ];
 
                         $status= addUser($user);

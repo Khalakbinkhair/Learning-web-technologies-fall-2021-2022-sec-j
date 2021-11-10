@@ -27,7 +27,7 @@
     {
         $con=getConnection();
 
-        $sql="insert into users values('','{$user['username']}','{$user['password']}','{$user['email']}','{$user['type']}')" ;
+        $sql="insert into users values('','{$user['username']}','{$user['password']}','{$user['email']}')" ;
 
                 if(mysqli_query($con,$sql))
                 {
@@ -78,7 +78,7 @@
         $con=getConnection(); 
 
         //$sql="update into users username='{$user['username']}',password='{$user['password']}',email='{$user['email']}',type='{$user['type']}' where id='{$user['id']}'" ;
-        $sql="update users set id ='{$user['id']}' ,username='{$user['username']}',  password='{$user['password']}',email='{$user['email']}',type='{$user['type']}' where id='{$user['id']}' ";
+        $sql="update users set id ='{$user['id']}' ,username='{$user['username']}',  password='{$user['password']}',email='{$user['email']}' where id='{$user['id']}' ";
 
                 if(mysqli_query($con,$sql))
                 {
