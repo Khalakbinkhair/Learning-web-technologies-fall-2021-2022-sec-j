@@ -4,45 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
-  <link href="styles.css" rel="stylesheet">
-  <script src="script.js"></script>
+ 
 </head>
 <body>
-  <div class="calculator-grid">
-    <div class="output">
-      <div data-previous-operand class="previous-operand"></div>
-      <div data-current-operand class="current-operand"></div>
-    </div>
+ 
     <table>
+       <tr>
+                <td colspan="4"><input type="text" id="input" name="input" value="" ></td>
+                
+            </tr>
+     <tr>
+        <td><button onclick="btn('CE')">CE</button></td>
+        <td><button onclick="btn('C')">C</button></td>
+        <td><button onclick="btn('DEL')">DEL</button></td>
+        <td><button onclick="btn('/')">/</button></td>
+      </tr>
       <tr>
-    <td><button data-all-clear class="span-two">AC</button></td>
-    <td><button data-delete><=</button></td>
-     <td> <button data-number>.</button></td>
-   <td> <button data-operation>÷</button></td></tr>
-
-   <tr>
-      <td><button data-number>7</button></td>
-    <td><button data-number>8</button></td>
-    <td><button data-number>9</button></td>
-    
-     <td> <button data-operation>*</button></td>
-    </tr>
+        <td><button onclick="btn('7')">7</button></td>
+        <td><button onclick="btn('8')">8</button></td>
+        <td><button onclick="btn('8')">9</button></td>
+        <td><button onclick="btn('*')">*</button></td>
+      </tr>
       <tr>
-   <td> <button data-number>4</button></td>
-   <td> <button data-number>5</button></td>
-    <td><button data-number>6</button></td>
-    <td> <button data-operation>-</button></td></tr>
-    <tr>
-    
-   <td><button data-number>1</button></td>
-    <td><button data-number>2</button></td>
-    <td><button data-number>3</button></td>
-    <td><button data-operation>+</button></td></tr>
-    
-    <button data-number>.</button>
-    <button data-number>0</button>
-    <button data-equals class="span-two">=</button>
+        <td><button onclick="btn('4')">4</button></td>
+        <td><button onclick="btn('5')">5</button></td>
+        <td><button onclick="btn('6')">6</button></td>
+        <td><button onclick="btn('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="btn('1')">1</button></td>
+        <td><button onclick="btn('2')">2</button></td>
+        <td><button onclick="btn('3')">3</button></td>
+        <td><button onclick="btn('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="btn('+/-')">+/-</button></td>
+        <td><button onclick="btn('0')">0</button></td>
+        <td><button onclick="btn('.')">.</button></td>
+        <td><button onclick="btn('=')">=</button></td>
+      </tr>
     </table>
-  </div>
+    <div id="d1"></div>
+     <script src="script.js"></script>
+ 
 </body>
 </html>
