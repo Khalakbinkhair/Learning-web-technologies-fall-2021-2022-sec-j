@@ -1,3 +1,6 @@
+<?php
+ include ('../../controller/Student/logincheck.php');
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -16,7 +19,7 @@
   
 
 
-            <form method="post" action="../../controller/Student/logincheck.php">
+            <form method="post" onsubmit="return validation()">
 
         <center>
             <div id="d3">
@@ -29,8 +32,8 @@
         
                 
 
-            User ID :  <input type="text" name="text"><br/>
-     </br>  Password: <input type="Password" name="password"><br/></h1></center>
+            User ID :  <input type="text" name="text" id="id"><br/>
+     </br>  Password: <input type="Password" name="password" id="password"><br/></h1></center>
  
 
    <center><h2><input type="submit" name="submit"value="Login"></a></br></br>Do you have any account?<a href="regfile.php">Register Here</a> </h2></center> 
@@ -40,6 +43,9 @@
            </i></b></br>        
 
          </div>
+         <script type="text/javascript" src="scriptLogin.js"></script>
         </body>
+
+
 
 </html>
