@@ -65,7 +65,7 @@ Profile picture:<input type="file" name="file" id="file" value=""><center><b>---
 
 
        
-</br><input type="submit" name="submit"value="submit" >|<a href="Loginform.php">Login Here</a></center>
+</br><input type="submit" name="submit"value="submit" >|<a href="Loginform.html">Login Here</a></center>
 
          <script type="text/javascript" src="script.js"></script>
              
