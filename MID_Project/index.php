@@ -1,5 +1,5 @@
 <?php 
 
-  header('location: view/Loginform.html');
+  header('location:view/Student/Loginform.php');
 
 ?>

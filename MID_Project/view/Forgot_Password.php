@@ -3,11 +3,11 @@
  
 	if(isset($_REQUEST['submit'])){
 		$email = $_REQUEST['email'];
-	$myfile = fopen('../model/user.txt', 'r');
+	  $myfile = fopen('../model/user.txt', 'r');
 
      while (!feof($myfile)) {
          $data = fgets($myfile);
-           $user = explode('|', $data);
+         $user = explode('|', $data);
          if ($data != "") {
            
                $useremail=trim($user[1])  ;
